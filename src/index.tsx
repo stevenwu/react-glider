@@ -126,6 +126,8 @@ export interface GliderProps {
    */
   responsive?: BreakPoint[];
 
+  type?: "slider" | "carousel";
+
   /** use any custom easing function, compatible with most easing plugins */
   easing?(x: number, t: number, b: number, c: number, d: number): number;
 
@@ -165,6 +167,7 @@ type GliderOptions = Pick<
   | 'dragVelocity'
   | 'duration'
   | 'skipTrack'
+  | 'type'
 >;
 
 export interface GliderMethods {
